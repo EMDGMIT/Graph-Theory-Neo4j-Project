@@ -1,5 +1,5 @@
 # Irish Constituencies Neo4j Database
-###### Student name, G00123456
+###### Éanna MacConough, G00314860
 
 ## Introduction
 Give a summary here of what your project is about.
@@ -40,3 +40,4 @@ RETURN
 
 ## References
 1. [Neo4J website](http://neo4j.com/), the website of the Neo4j database.
+2. 2. [TheJournal.ie/election-2016](http://www.thejournal.ie/election-2016/), infomation on all candidates running in the 2016 election.
