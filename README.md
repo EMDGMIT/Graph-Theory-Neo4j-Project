@@ -40,4 +40,4 @@ RETURN
 
 ## References
 1. [Neo4J website](http://neo4j.com/), the website of the Neo4j database.
-2. 2. [TheJournal.ie/election-2016](http://www.thejournal.ie/election-2016/), infomation on all candidates running in the 2016 election.
+2. [TheJournal.ie/election-2016](http://www.thejournal.ie/election-2016/), infomation on all candidates running in the 2016 election.
