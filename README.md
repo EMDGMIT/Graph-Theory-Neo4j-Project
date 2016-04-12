@@ -26,37 +26,40 @@ The graph database is laid out as follows:
 There are three different type of Nodes and two different type of Relationships.
 
 (cand1:Candidate:Female {name: "Adrienne Wallace", age:25, constituency: "Carlow-Kilkenny", party: "Anti-Austerity Alliance–People Before Profit"})
+
 **Candidate** is the first Node type, which has a tag, cand(number), the label Candidate, a sub-label for the Candidate's gender, and the following properties:
-Property | Description
-| --- | --- |
-name	|	the candidate's name
-age		|	the candidate's age
-constituency	|	the candidate's constituency
-party	|	the name of the party they are a member of
+- **name**: the candidate's name
+- **age**: the candidate's age
+- **constituency**: the candidate's constituency
+- **party**: the name of the party they are a member of
+
 
 (constit1:Constituency {name: 'Carlow-Kilkenny', seats:5, population:145659, quota:11669})
+
 **Constituency** is the second Node type, which has a tag, constit(number), the label Constituency and the following properties:
-Property | Description
-| --- | --- |
-name	|	the name of the constituency
-seats	|	the number of seats available for TDs from that constituency
-population	|	the number of people allowed to vote within the constituency
-quota	|	the number of votes a candidate needs to get a seat in government
+- **name**: the name of the constituency
+- **seats**: the number of seats available for TDs from that constituency
+- **population**: the number of people allowed to vote within the constituency
+- **quota**: the number of votes a candidate needs to get a seat in government
+
 
 (party1:Party {name: "Fianna Fáil", founded:1926}),	
+
 **Party** is the third type of Node, which has a tag, party(number), the label Party and the following properties:
-Property | Description
-| --- | --- |
-name	|	the full name of the party
-founded		|	the year in which the party was officially established
+- **name**: the full name of the party
+- **founded**: the year in which the party was officially established
+
 
 CREATE cand1-[:RUNS_IN]->constit1;
+
 **RUNS_IN** is the first type of Relationship, which connects the Candidate and Constituency nodes.
 Both 'cand1' and 'constit1' reference the tags of the Candidate and Constitution nodes respectively which 
 are being called to establish a relationship. The 'constituency' property in Candidate and the 'name' 
 property in Constituency is used to create the relationship between the Candidate and Constituency nodes.
 
+
 CREATE cand1-[:MEMBER_OF]->party1;
+
 **MEMBER_OF** is the second type of Relationship, which connects the Candidate and Party nodes.
 Both 'cand1' and 'party1' reference the tags of the Candidate and Party nodes respectively which are being 
 called to establish a relationship. The 'party' property in Candidate and the 'name' property in Party is 
@@ -94,6 +97,9 @@ MATCH
 RETURN 
    min(can.age) AS Youngest_Candidate, can.constituency AS Constituency
 ```
+
+##Notes
+Whille pushing the project to the Project URL, I encountered errors when doing so. In order to get a successful push, the original folder which contained the project was deleted. I was able to clone the project into a new folder, however, it did not save the commits I had made throughout the project.
 
 ## References
 1. [Neo4J website](http://neo4j.com/), the website of the Neo4j database.
