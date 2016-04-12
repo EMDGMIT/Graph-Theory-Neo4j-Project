@@ -99,7 +99,7 @@ RETURN
 ```
 
 ##Notes
-Whille pushing the project to the Project URL, I encountered errors when doing so. In order to get a successful push, the original folder which contained the project was deleted. I was able to clone the project into a new folder, however, it did not save the commits I had made throughout the project.
+Whille pushing the project to the Project URL, I encountered errors when doing so. In order to get a successful push, the original folder which contained the project was deleted. I was able to clone the project into a new folder, however, it did not save the commits I had made throughout the project. I had made about 7 - 8 commits prior to attempting to push the project to GitHub, mainly consisting of creating and editing documents and fixing the database.
 
 ## References
 1. [Neo4J website](http://neo4j.com/), the website of the Neo4j database.
