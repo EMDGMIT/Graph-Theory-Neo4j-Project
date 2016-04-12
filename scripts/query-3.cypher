@@ -1,9 +1,4 @@
-// Describe your query
-// at the start
-// in comments.
-
-
-MATCH
-	(n)
-RETURN
-	n;
+MATCH 
+    (can:Candidate)
+RETURN 
+   min(can.age) AS Youngest_Candidate, can.constituency AS Constituency

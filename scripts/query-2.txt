@@ -1,0 +1,11 @@
+// This query calculates the Average number of people represented by each Dáil seat. We call the Constituency 
+// node, then we use the function avg() to sum all the instances of properties population and seats and 
+// return the overall average. We then divide the 2 results by each other the get the average number of 
+// people per Dáil seat. This number is slightly below what the actual average should be because the 
+// population number for each Constituency only represents those eligible to vote.
+
+
+MATCH 
+    (c:Constituency)
+RETURN 
+    avg(c.population) / avg(c.seats) AS AveragePeoplePerDailSeat

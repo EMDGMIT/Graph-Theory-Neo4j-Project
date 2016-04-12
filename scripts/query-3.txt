@@ -1,0 +1,8 @@
+// This query retrieves the age of youngest candidate running in each Constituency. It calls the Candidate 
+// node and returns the age of the youngest candidate and the constituency of a candidate.
+
+
+MATCH 
+    (can:Candidate)
+RETURN 
+   min(can.age) AS Youngest_Candidate, can.constituency AS Constituency

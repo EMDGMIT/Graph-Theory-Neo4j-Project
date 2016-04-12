@@ -1,9 +1,4 @@
-// Describe your query
-// at the start
-// in comments.
-
-
-MATCH
-	(n)
-RETURN
-	n;
+MATCH 
+    (c:Constituency)
+RETURN 
+    avg(c.population) / avg(c.seats) AS AveragePeoplePerDailSeat

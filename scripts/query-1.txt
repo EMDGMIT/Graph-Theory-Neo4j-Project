@@ -1,0 +1,8 @@
+// This query takes the average of all the instances of properties quota from the Constituency node and 
+// returns the overall average.
+
+
+MATCH 
+    (con:Constituency)
+RETURN 
+    avg(con.quota) AS AverageQuotaForDailSeat
